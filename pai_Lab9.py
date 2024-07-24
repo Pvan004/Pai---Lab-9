@@ -14,7 +14,6 @@ def decode(password):
         opassword = opassword + str(i)
     print(f"The encoded password is {password}, and the original password is {opassword}")
 
-
 def menu(): # prints menu
     print("Menu")
     print("-------------")
