@@ -1,4 +1,4 @@
-def encode(password):
+def encode(password): # created by Paige, encodes password, returns string called newpassword after encoded
     newpassword = ""
     for i in password:
         i = int(i)
@@ -6,7 +6,7 @@ def encode(password):
         newpassword += str(i)
     return newpassword
 
-def menu():
+def menu(): # prints menu
     print("Menu")
     print("-------------")
     print("1. Encode")
@@ -14,7 +14,7 @@ def menu():
     print("3. Quit")
     print()
 
-def main():
+def main(): # main function
     while True:
         menu()
         choice = input("Please enter an option: ")
