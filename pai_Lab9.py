@@ -6,6 +6,14 @@ def encode(password): # created by Paige, encodes password, returns string calle
         newpassword += str(i)
     return newpassword
 
+def decode(password):
+    opassword = ''
+    for i in password:
+        i = int(i)
+        i = i - 3
+        opassword = opassword + str(i)
+    print(f"The encoded password is {password}, and the original password is {opassword}")
+
 def menu(): # prints menu
     print("Menu")
     print("-------------")
@@ -25,6 +33,7 @@ def main(): # main function
             print()
 
         elif choice == '2': # wait for partner
+            decode(newpassword)
             pass
 
         elif choice == '3': # exits program
