@@ -6,7 +6,6 @@ def encode(password): # created by Paige, encodes password, returns string calle
         newpassword += str(i)
     return newpassword
 
-
 def decode(password):
     opassword = ''
     for i in password:
