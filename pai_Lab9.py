@@ -10,9 +10,17 @@ def decode(password):
     opassword = ''
     for i in password:
         i = int(i)
-        i = i - 3
+        if i > 2:
+            i = i - 3
+        elif i == 0:
+            i = 7
+        elif i == 1:
+            i = 8
+        elif i == 2:
+            i = 9
         opassword = opassword + str(i)
     print(f"The encoded password is {password}, and the original password is {opassword}")
+
 
 def menu(): # prints menu
     print("Menu")
